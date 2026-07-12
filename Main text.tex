@@ -44,7 +44,8 @@
 %% for your publication.
 %%
 %%
-\documentclass[sigconf,authordraft]{acmart}
+% ISS 2026 / PACM HCI review format: single column, line-numbered, anonymous.
+\documentclass[manuscript,review,anonymous]{acmart}
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -62,20 +63,9 @@
 
 
 
-\setcopyright{acmlicensed}
-\copyrightyear{2018}
-\acmYear{2018}
-\acmDOI{XXXXXXX.XXXXXXX}
-%% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[SIGGRAPH  '2026]{SIGGRAPH 2026}{July 19--23,
-  2026}{Los Angeles}
-%%
-%%  Uncomment \acmBooktitle if the title of the proceedings is different
-%%  from ``Proceedings of ...''!
-%%
-%%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-%%  June 03--05, 2018, Woodstock, NY}
-\acmISBN{978-1-4503-XXXX-X/2018/06}
+\setcopyright{none}
+\copyrightyear{2026}
+\acmYear{2026}
 
 
 %%
@@ -144,14 +134,7 @@
 {Physiological Legibility in Multiplayer Games:\\
 An STS Perspective on Visualizing Biosignals for Cooperative Play}
 
-\author{%
-Roman Jahandideh\\
-Simon Fraser University\\
-{\small Option Chosen: Option 1 -- Research, Creation or Speculative Design Proposal and Literature Review Essay}\\
-{\small Instructor: Dr.\ Gabriela Aceves-Sep\'ulveda}
-}
-
-\renewcommand{\shortauthors}{Jahandideh}
+\author{Anonymous Author(s)}
 
 
 
@@ -161,7 +144,7 @@ Simon Fraser University\\
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{IAT803 G100 Science, Technology & Culture}
+\renewcommand{\shortauthors}{Anonymous Author(s)}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
@@ -219,6 +202,7 @@ The project deviates from interface designs that primarily employ physiological 
 \begin{teaserfigure}
   \includegraphics[width=\textwidth]{new interface.png}
   \caption{The BioTerrarium prototype visualizes players’ physiological signals through dynamic halos around avatar icons. HR and HRV are communicated as ambient visual cues supporting coordination during cooperative play.}
+  \Description{A multiplayer game interface with player avatar icons surrounded by dynamic visual halos. The halos vary in pulse, density, brightness, and stability to communicate heart rate and heart-rate variability as ambient coordination cues.}
   \label{fig:teaser}
 \end{teaserfigure}
 
@@ -364,7 +348,7 @@ The artifact developed in this study is a multiplayer physiological interface th
   \centering
   \includegraphics[width=\textwidth]{Icon.jpg}
   \caption{The icon design evolves through theoretical perspectives from Science and Technology Studies (STS), transforming an abstract sensing field into a human avatar surrounded by a dynamic halo. The final icon visualizes physiological signals as an ambiguous social cue, where halo brightness, pulse, density, and stability vary with heart rate (HR) and heart rate variability (HRV).}
-  \Description{}
+  \Description{A visual design figure showing variations in avatar shapes and layered halo structures used to represent changes in heart rate and heart-rate variability.}
 \end{figure*}
 
 \subsection{Speculative Interface Design}
@@ -384,7 +368,7 @@ Early exploratory sketches were produced to investigate alternative visual strat
   \centering
   \includegraphics[width=\textwidth]{designprocess.png}
   \caption{Early design sketches exploring the visual representation of physiological signals in the avatar icon interface. The sketches investigate multiple configurations for embedding heart rate (HR) and heart rate variability (HRV) into the avatar visualization, including inner shape deformation, pulsating rings, and layered halo structures.}
-  \Description{}
+  \Description{A visual design figure showing variations in avatar shapes and layered halo structures used to represent changes in heart rate and heart-rate variability.}
 \end{figure*}
 \subsection{Analytical Framework}
 This study's analytical approach is based on human–computer interaction research theories of situated interaction and embodied involvement.\cite{suchman_plans_1987}contends that contextual interaction, as opposed to carrying out preconceived goals, is how human activity develops. In a similar vein,\cite{dourish_where_2004}highlights how embodied interaction with technology settings creates meaning in interactive systems. 
@@ -476,19 +460,10 @@ This work introduced a hypothetical multiplayer interface that visualises heart 
 The study looked at how physiological sensing technologies might be used as interface components that influence interpretation and coordination in multiplayer interaction, in addition to serving as instruments for gauging participant states. The research investigated how processes of sensing, categorisation, and visualisation affect how physiological information becomes meaningful inside digital settings, drawing on viewpoints from human-computer interaction and Science and Technology Studies.
 The interface highlights the interpretative and socially controlled character of physiological data by portraying physiological signals as contextual visual clues rather than conclusive markers of interior emotional states. As a result, the artefact illustrates a different strategy for incorporating physiological sensing into game interfaces, one that prioritises awareness, interpretation, and cooperative interaction above deterministic emotional detection. 
 The study adds to existing debates on the use of biometric sensing technologies in interactive systems in the fields of human-computer interaction, game design, and Science and Technology Studies. The impact of physiological visualisation on player coordination, perception, and communication in cooperative digital settings may be further studied in the future.
-\section{Acknowledgment of Peer Review Feedback}
-After receiving comments from peers during the course review process, this work was changed. The document was improved and numerous parts of the project were clarified thanks to the helpful feedback from Mr. Seyyed and Mrs. Wang. 
-Mr. Seyyed recommended that the article clarify the connection between the design of the physiological interface and the theoretical framework derived from Science and Technology Studies. In response to this criticism, the updated manuscript makes a stronger connection between the artefact and ideas of measurement, classification, and technological mediation that have been explored by academics like \cite{nelson_meeting_1996,bowker_sorting_2008}. The Discussion section was also revised to provide a clearer explanation of how these theoretical viewpoints are reflected in the interface design.
-Mrs. Wang suggested making the methodological explanation more understandable and giving a more thorough explanation of how physiological signals are converted into interface visual components. In response to this recommendation, the Methodology and System Design sections were enlarged to provide a more thorough explanation of the system architecture, the study creation methodology, and the procedure for integrating heart rate and heart rate variability data into the multiplayer interface.
-The final version of the paper, therefore, incorporates these comments by strengthening the connection between theory and design, clarifying the methodological approach, and improving the explanation of the proposed interface system.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Acknowledgment of AI Tools}
-An AI language model (ChatGPT) was utilised as a writing aid for language editing and text organising while this work was being prepared. The author created the initial textual content, conceptual framework, research idea, and artefact design. The text's early drafts, which were written by hand in a word processing program, have grammatical mistakes and an informal structure typical of a working draft. 
-The main purpose of the AI technique was to rearrange these draft paragraphs into more understandable academic jargon. In actuality, the author instructed the AI system to reorganise the content into a more formal academic style while maintaining the original meaning after writing preliminary text outlining the study concepts, methodology, and design process.
-A typical prompt used during this process was the following:
-“Please reorganize the following draft text into a clear academic paragraph suitable for a research paper. Maintain the original ideas but correct grammar, improve clarity, and structure the writing in a formal academic style. Do not add new arguments or change the meaning of the text.”
-Therefore, rather of being a source of research ideas or analysis, the AI technology was utilised as a language editing and structuring help. The author made all conceptual choices, interpretations, and final edits. Before adding any AI-assisted material to the final publication, the author made sure it was accurate and in line with the goals of the study.
+\section{Generative AI Use Disclosure}
+ChatGPT was used for language editing and restructuring text drafted by the author. It was not used to generate the research idea, conceptual framework, study design, data, results, or citations. The author reviewed and takes responsibility for all content.
 
+% Identifying acknowledgments are omitted for blind review.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
