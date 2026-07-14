@@ -337,6 +337,44 @@ Rapid pulse, sharp glow, and stronger expansion \\
 \end{tabularx}
 \end{table*}
 
+We represented simulated heart-rate variability using four baseline-relative states. The thresholds were expressed as percentages of baseline HRV using an RMSSD-style design logic. These prototype categories represented changes in coherence, stability, and fragmentation rather than fixed emotional or clinical states.
+
+\begin{table*}[t]
+\centering
+\caption{Heart-rate-variability stimulus classification used in the prototype. Thresholds were defined relative to baseline HRV and were used to structure the simulated visual states rather than to assign clinical or emotional labels.}
+\label{tab:hrv-stimulus-classification}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}p{0.20\textwidth}YYY@{}}
+\toprule
+\textbf{HRV state} &
+\textbf{Physiological meaning} &
+\textbf{Prototype threshold} &
+\textbf{Icon effect} \\
+\midrule
+\textbf{V1: High Coherence} &
+High variability and flexible regulation &
+$\geq 110\%$ of baseline HRV &
+Smooth continuous ring, wide breathing halo, and stable motion \\
+\textbf{V2: Stable Variability} &
+Normal or baseline variability &
+$90$--$109\%$ of baseline HRV &
+Clean dotted ring and regular halo motion \\
+\textbf{V3: Reduced Variability} &
+Lower flexibility and possible physiological strain &
+$60$--$89\%$ of baseline HRV &
+Denser segmented ring with a slight wobble \\
+\textbf{V4: Suppressed / Fragmented Variability} &
+Very low variability and reduced regulatory stability &
+Less than $60\%$ of baseline HRV &
+Broken ring, visible jitter, and irregular opacity \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+Tables~\ref{tab:hr-stimulus-classification} and~\ref{tab:hrv-stimulus-classification} summarize the baseline-relative HR and HRV classifications used to generate the sixteen animated stimulus conditions.
+
 \begin{figure*}[t]
   \centering
   \includegraphics[width=\textwidth]{Icon.jpg}
